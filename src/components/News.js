@@ -47,7 +47,8 @@ export class News extends Component {
     }
 
     async componentDidMount(){
-        this.updateNews();
+        this.updateNews();        
+        this.setState({ page: this.state.page + 1 })
     }
 
     handlePrevClick = async ()=>{
